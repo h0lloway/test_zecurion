@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('html/head.html', {
+"title":"test_MD"
+})
+
+<body>
+  @include('html/header.html', {})
+  <main>
+
+
+    <section class="top-info" id="top-info">
+      <div class="container top-info__container">
+
+        <h1 style="display: none;">Какой-то веб-интерфейс</h1>
+
+        <div class="top-info__content">
+
+          <ul class="top-info__list list-reset">
+            <li class="top-info__list-item item">
+              <div class="item__descr">
+                Всего инцидентов
+              </div>
+              <div class="item__digits digits">
+                <span class="digits__main">1576</span>
+                <span class="digits__percent one">+16%</span>
+              </div>
+            </li>
+            <li class="top-info__list-item item">
+              <div class="item__descr">
+                Высокая важность
+              </div>
+              <div class="item__digits digits">
+                <span class="digits__main red-color">157</span>
+                <span class="digits__percent two">+8%</span>
+              </div>
+            </li>
+            <li class="top-info__list-item item">
+              <div class="item__descr">
+                Средняя важность
+              </div>
+              <div class="item__digits digits">
+                <span class="digits__main orange-color">253</span>
+                <span class="digits__percent three">+3%</span>
+              </div>
+            </li>
+            <li class="top-info__list-item item">
+              <div class="item__descr">
+                Всего связей
+              </div>
+              <div class="item__digits digits">
+                <span class="digits__main">88</span>
+                <span class="digits__percent four">+2%</span>
+              </div>
+            </li>
+            <li class="top-info__list-item item">
+              <div class="item__descr">
+                Исходящий трафик
+              </div>
+              <div class="item__digits digits">
+                <span class="digits__main">653&nbsp;МБ</span>
+                <span class="digits__percent five">-8%</span>
+              </div>
+            </li>
+            <li class="top-info__list-item item">
+              <div class="item__descr">
+                Входящий трафик
+              </div>
+              <div class="item__digits digits">
+                <span class="digits__main">476&nbsp;МБ</span>
+                <span class="digits__percent six">+16%</span>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="main-window" id="main-window">
+      <div class="container main-window__container">
+
+        <div class="main-window__content">
+          <h2>Данные не&nbsp;обнаружены</h2>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bot-table" id="bot-table">
+      <div class="container bot-table__container">
+
+        <ul class="bot-table__list list-reset">
+
+
+          <li class="bot-table__list-item users">
+            <h2 class="users__title title">Пользователи по&nbsp;инцидентам</h2>
+            <table class="users__table table">
+              <thead class="table__head">
+                <tr>
+                  <th class="table__head-item">Пользователь</th>
+                  <th class="table__head-item align" colspan="3">Инциденты</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr class="table__row">
+                  <td class="table__name">Андрей Иванов</td>
+
+                  <td class="table__digit">50 <span class="red-circle"></span></td>
+                  <td class="table__digit">18 <span class="orange-circle"></span></td>
+                  <td class="table__digit">31 <span class="green-circle"></span></td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name">Михаил Вешкин</td>
+
+                  <td class="table__digit">47 <span class="red-circle"></span></td>
+                  <td class="table__digit">24 <span class="orange-circle"></span></td>
+                  <td class="table__digit">0 <span class="green-circle transp"></span></td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name">Семен Измайлов</td>
+
+                  <td class="table__digit">32 <span class="red-circle"></span></td>
+                  <td class="table__digit">0 <span class="orange-circle transp"></span></td>
+                  <td class="table__digit">12 <span class="green-circle"></span></td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name">Николай Островский</td>
+
+                  <td class="table__digit">11 <span class="red-circle"></span></td>
+                  <td class="table__digit">7 <span class="orange-circle"></span></td>
+                  <td class="table__digit">0 <span class="green-circle transp"></span></td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name">Константин Константинопольский</td>
+
+                  <td class="table__digit grey-color">0 <span class="red-circle transp"></span></td>
+                  <td class="table__digit grey-color">0 <span class="orange-circle transp"></span></td>
+                  <td class="table__digit grey-color">8 <span class="green-circle"></span></td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name">Александр Овчинников</td>
+
+                  <td class="table__digit grey-color">0 <span class="red-circle transp"></span></td>
+                  <td class="table__digit grey-color">13 <span class="orange-circle"></span></td>
+                  <td class="table__digit grey-color">7 <span class="green-circle"></span></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </li>
+
+
+          <li class="bot-table__list-item categories">
+            <h2 class="categories__title title">Категории сайтов</h2>
+
+            <table class="categories__table table">
+              <thead class="table__head">
+                <tr>
+                  <th class="table__head-item filter">Категория</th>
+                  <th class="table__head-item align min-width" colspan="2">
+                    Количество инцидентов
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr class="table__row">
+                  <td class="table__name">Поисковики</td>
+                  <td class="table__digit width">1&nbsp;257</td>
+                  <td class="table__percent">+3%</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name">Новостные порталы</td>
+                  <td class="table__digit width">1&nbsp;129</td>
+                  <td class="table__percent green-trian">-2.1%</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name">Развлекательные</td>
+                  <td class="table__digit width">987</td>
+                  <td class="table__percent">+7%</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name cut">
+                    <div>
+                      Категория с&nbsp;длинным названием, которое обрезается по&nbsp;ширине
+                    </div>
+                  </td>
+                  <td class="table__digit width">596</td>
+                  <td class="table__percent green-trian">-3%</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name">Игры</td>
+                  <td class="table__digit width">431</td>
+                  <td class="table__percent">+1%</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name">Форумы</td>
+                  <td class="table__digit width">147</td>
+                  <td class="table__percent">+2%</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </li>
+
+
+          <li class="bot-table__list-item discipline">
+            <h2 class="discipline__title title">Дисциплина</h2>
+
+            <table class="table">
+
+              <thead class="table__head">
+                <tr>
+                  <th class="table__head-item">Дата</th>
+                  <th class="table__head-item center" colspan="2">Приход</th>
+                  <th class="table__head-item center" colspan="2">Уход</th>
+                  <th class="table__head-item align width">Рабочее время</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr class="table__row">
+                  <td class="table__name date">20.04</td>
+                  <td class="table__name end">08:07</td>
+                  <td class="table__diff red-color">+7мин</td>
+                  <td class="table__name end">16:55</td>
+                  <td class="table__diff red-color">-5мин</td>
+                  <td class="table__name red-color align">07:48</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name date">19.04</td>
+                  <td class="table__name end">07:56</td>
+                  <td class="table__diff green-color">-4мин</td>
+                  <td class="table__name end">16:56</td>
+                  <td class="table__diff red-color">+4мин</td>
+                  <td class="table__name green-color align">08:00</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name date">18.04</td>
+                  <td class="table__name end">09:30</td>
+                  <td class="table__diff red-color">+1ч30мин</td>
+                  <td class="table__name end">18:30</td>
+                  <td class="table__diff green-color">+1ч30мин</td>
+                  <td class="table__name green-color align">08:00</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name date">17.04</td>
+                  <td class="table__name end">08:47</td>
+                  <td class="table__diff red-color">+47мин</td>
+                  <td class="table__name end">17:47</td>
+                  <td class="table__diff green-color">+47мин</td>
+                  <td class="table__name green-color align">08:00</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name date">16.04</td>
+                  <td class="table__name end">08:12</td>
+                  <td class="table__diff red-color">+12мин</td>
+                  <td class="table__name end">16:55</td>
+                  <td class="table__diff red-color">-5мин</td>
+                  <td class="table__name red-color align">07:43</td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__name date">14.04</td>
+                  <td class="table__name end">08:00</td>
+                  <td class="table__diff grey-color">&mdash;</td>
+                  <td class="table__name end">16:57</td>
+                  <td class="table__diff red-color">-3мин</td>
+                  <td class="table__name red-color align">07:57</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </section>
+
+
+  </main>
+  @include('html/footer.html', {})
+</body>
+
+</html>
